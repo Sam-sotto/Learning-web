@@ -1,0 +1,151 @@
+:root{
+    --pink-color: #f67c92;
+}
+
+#header{
+    height: 100vh;
+    background-image: url('images/background.png');
+    background-position: center;
+    background: cover;
+}
+
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.logo {
+    margin-top: 30px;
+    width: 100px;
+}
+
+.header-text{
+    max-width: 350px;
+    margin-top: 120px;
+}
+
+h1{
+    font-size: 34px;
+}
+
+.square {
+    height: 12px;   
+    width: 12px;
+    display: inline-block;
+    background: var(--pink-color);
+    margin: 15px 0;
+}
+
+.common-btn{
+    padding:18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid var(--pink-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p{
+    font-size: 15px;
+    line-height: 18px;
+    color: #777;
+}
+
+
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.line-1 , .line-2, .line-3{
+    width: 15px;
+    height: 15px;
+    background: var(--pink-color);
+    display: inline-block;
+}
+
+.line-2{
+    width: 80px;
+    height: 1px;
+}
+
+.line-3{
+    width: 60px;
+    height: 1px;
+}
+
+.line{
+    line-height: 8px;
+}
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    transition: .5s;
+    background: var(--pink-color);
+    z-index: 2;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu-btn {
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 770px){
+
+    #header{
+        background-image: none;
+    }
+    .container {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .logo {
+        margin-top: 27px;
+        width: 70px;
+    }
+    
+    .header-text{
+        margin-top: 100px;
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+
+    #menu-btn {
+        width: 40px;
+        right: 50px;
+    }
+
+    .common-btn{
+        padding: 10px 16px;
+    }
+
+    .social-icons img{
+        width: 14px;
+        margin: 15px auto;
+        
+    }
+}

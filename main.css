@@ -1,0 +1,19 @@
+@import "header.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import "about.css";
+@import "features.css";
+@import "courses.css";
+@import "offer.css";
+@import "contact.css";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+
